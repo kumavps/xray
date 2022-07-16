@@ -1,0 +1,26 @@
+{
+  "log": {
+    "loglevel": "error"
+  },
+  "inbounds": [
+    {
+      "port": 10010,
+      "protocol": "trojan",
+      "settings": {
+        "clients": []
+      },
+      "streamSettings": {
+        "network": "ws",
+        "security": "none",
+        "wsSettings": {
+          "path": "/websocket"
+        }
+      }
+    }
+  ],
+  "outbounds": [
+    {
+      "protocol": "freedom"
+    }
+  ]
+}
