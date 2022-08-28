@@ -16,7 +16,7 @@ services:
     expose:
       - "10010"
     volumes:
-      - "./xray/data:/etc/xray"
+      - "./xray/confs:/etc/xray/confs"
     restart: "unless-stopped"
   nginx:
     image: "nginx:alpine"

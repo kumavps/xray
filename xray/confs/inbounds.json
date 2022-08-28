@@ -1,0 +1,29 @@
+{
+    "inbounds": [
+        {
+            "port": 10010,
+            "protocol": "trojan",
+            "settings": {
+                "clients": [
+                    {
+                        "password": "xray"
+                    }
+                ]
+            },
+            "streamSettings": {
+                "network": "ws",
+                "security": "none",
+                "wsSettings": {
+                    "path": "/websocket"
+                }
+            },
+            "sniffing": {
+                "enabled": true,
+                "destOverride": [
+                    "http",
+                    "tls"
+                ]
+            }
+        }
+    ]
+}

@@ -1,0 +1,21 @@
+{
+    "routing": {
+        "domainStrategy": "AsIs",
+        "rules": [
+            {
+                "type": "field",
+                "outboundTag": "block",
+                "domain": [
+                    "geosite:category-ads-all"
+                ]
+            },
+            {
+                "type": "field",
+                "outboundTag": "block",
+                "protocol": [
+                    "bittorrent"
+                ]
+            }
+        ]
+    }
+}
