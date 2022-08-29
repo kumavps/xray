@@ -1,4 +1,4 @@
 cloudflared_token.txt
 xray/confs/config.json
 xray/ssl
-xray/share/uri.txt
+xray/share
