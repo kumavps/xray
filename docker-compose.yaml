@@ -7,10 +7,10 @@ services:
     expose:
       - "80"
     volumes:
-      - "filebrowser_data:/database"
+      - "filebrowser_database:/database"
+      - "filebrowser_data:/srv"
       - "./nginx:/srv/nginx"
       - "./xray/confs:/srv/xray"
-      - "./xray/share:/srv/share"
     restart: "unless-stopped"
   portainer:
     image: "portainer/portainer-ce:latest"
@@ -50,5 +50,6 @@ services:
   #   restart: "unless-stopped"
 
 volumes:
-  portainer_data:
+  filebrowser_database:
   filebrowser_data:
+  portainer_data:
