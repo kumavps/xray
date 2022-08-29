@@ -6,7 +6,12 @@
             "settings": {
                 "clients": [
                     {
-                        "password": "xray"
+                        "email": "public@public.com",
+                        "password": "c47c74fb41495f88ecaa33c3b6979e78"
+                    },
+                    {
+                        "email": "docker@docker.com",
+                        "password": "docker"
                     }
                 ]
             },
